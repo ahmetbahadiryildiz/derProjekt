@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "122782661700",
+    "project_id": "derprojekt-8e1c2",
+    "storage_bucket": "derprojekt-8e1c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122782661700:android:ac57ec1c09da6b4d259011",
+        "android_client_info": {
+          "package_name": "com.greemlock.derprojekt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122782661700-dcjqebc6ou7sholkqv76svgtu8k212pk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlFuFuNmzwCcJfZyybSci2Ifj0JZ_c5cg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122782661700-dcjqebc6ou7sholkqv76svgtu8k212pk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
