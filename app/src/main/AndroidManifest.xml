@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DerProjekt">
         <activity
+            android:name=".SelectionActivity"
+            android:exported="false" />
+        <activity
             android:name=".SessionActivity"
             android:exported="false" />
         <activity

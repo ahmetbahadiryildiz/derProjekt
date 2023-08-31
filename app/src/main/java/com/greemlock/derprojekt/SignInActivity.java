@@ -9,9 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.gms.auth.api.identity.BeginSignInRequest;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
@@ -90,17 +87,6 @@ public class SignInActivity extends AppCompatActivity {
 
         });
 
-        Button buttonSignInWithGoogle = findViewById(R.id.buttonSignInWithGoogle);
-        buttonSignInWithGoogle.setOnClickListener(view ->{
-            BeginSignInRequest signInRequest = BeginSignInRequest.builder()
-                    .setGoogleIdTokenRequestOptions(BeginSignInRequest.GoogleIdTokenRequestOptions.builder()
-                            .setSupported(true)
-                            // Your server's client ID, not your Android client ID.
-                            .setServerClientId(getString(R.string.web_client_id))
-                            // Only show accounts previously used to sign in.
-                            .setFilterByAuthorizedAccounts(true)
-                            .build())
-                    .build();
-        });
+
     }
 }

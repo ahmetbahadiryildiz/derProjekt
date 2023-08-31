@@ -1,4 +1,4 @@
-package com.greemlock.derprojekt;
+package com.greemlock.derprojekt.Fragments;
 
 import android.os.Bundle;
 
@@ -9,6 +9,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.greemlock.derprojekt.R;
 
 public class ProfileFragment extends Fragment {
     @Override
