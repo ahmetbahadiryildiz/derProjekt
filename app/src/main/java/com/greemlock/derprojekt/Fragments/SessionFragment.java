@@ -25,6 +25,7 @@ import com.greemlock.derprojekt.Objects.Message;
 import com.greemlock.derprojekt.Objects.Session;
 import com.greemlock.derprojekt.Objects.User;
 import com.greemlock.derprojekt.R;
+import com.greemlock.derprojekt.SelectionActivity;
 import com.greemlock.derprojekt.SessionActivity;
 
 import java.util.ArrayList;
@@ -72,7 +73,7 @@ public class SessionFragment extends Fragment {
         String getTime = Calendar.getInstance().getTime().toString();
         ArrayList<Message> messageList = new ArrayList<>();
         buttonNewSession.setOnClickListener(view1 -> {
-            Session newSession = new Session("",currentUser.getUserAdvisorUid(),firebaseUser.getUid(),getTime,messageList);
+            /*Session newSession = new Session("",currentUser.getUserAdvisorUid(),firebaseUser.getUid(),getTime,messageList);
 
             DatabaseReference databaseReferenceSessions = FirebaseDatabase.getInstance().getReference("sessions");
             databaseReferenceSessions.push().setValue(newSession);
@@ -95,8 +96,8 @@ public class SessionFragment extends Fragment {
                 public void onCancelled(@NonNull DatabaseError error) {
                     Log.e("FireData Error:",error.getDetails());
                 }
-            });
-            Intent IntentStartNewSession = new Intent(getActivity(), SessionActivity.class);
+            });*/
+            Intent IntentStartNewSession = new Intent(getActivity(), SelectionActivity.class);
             startActivity(IntentStartNewSession);
         });
     }

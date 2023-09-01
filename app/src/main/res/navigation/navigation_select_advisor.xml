@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_select_advisor"
+    app:startDestination="@id/therapyTypeFragment">
+
+    <fragment
+        android:id="@+id/therapyTypeFragment"
+        android:name="com.greemlock.derprojekt.Fragments.TherapyTypeFragment"
+        android:label="fragment_therapy_type"
+        tools:layout="@layout/fragment_therapy_type" >
+        <action
+            android:id="@+id/therapy_type_to_user_info"
+            app:destination="@id/userInformationFragment"
+            app:popUpTo="@id/userInformationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInformationFragment"
+        android:name="com.greemlock.derprojekt.Fragments.UserInformationFragment"
+        android:label="fragment_user_information"
+        tools:layout="@layout/fragment_user_information" >
+        <action
+            android:id="@+id/action_userInformationFragment_to_problemDefinitionFragment"
+            app:destination="@id/problemDefinitionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/problemDefinitionFragment"
+        android:name="com.greemlock.derprojekt.Fragments.ProblemDefinitionFragment"
+        android:label="fragment_problem_definition"
+        tools:layout="@layout/fragment_problem_definition" >
+        <action
+            android:id="@+id/action_problemDefinitionFragment_to_advisorSelectionFragment"
+            app:destination="@id/advisorSelectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/advisorSelectionFragment"
+        android:name="com.greemlock.derprojekt.Fragments.AdvisorSelectionFragment"
+        android:label="fragment_advisor_selection"
+        tools:layout="@layout/fragment_advisor_selection" />
+</navigation>
