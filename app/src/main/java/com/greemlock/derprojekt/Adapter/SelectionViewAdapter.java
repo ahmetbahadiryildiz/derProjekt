@@ -49,15 +49,13 @@ public class SelectionViewAdapter extends RecyclerView.Adapter<RecyclerView.View
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.selection_recycler,parent,false);
+                .inflate(R.layout.selection_offer_recycler,parent,false);
         return new ViewHolderSelection(itemView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         final Service service = serviceList.get(position);
-
-        Log.e("POSITION:",String.valueOf(position));
 
         ViewHolderSelection viewHolder = (ViewHolderSelection) holder;
         viewHolder.textViewServiceTitle.setText(service.getServiceTitle());
