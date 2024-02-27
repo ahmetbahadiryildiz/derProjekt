@@ -23,38 +23,38 @@
         app:titleMarginStart="8dp"
         tools:ignore="RtlSymmetry" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewSession"
+    <com.sendbird.calls.SendBirdVideoView
+        android:id="@+id/sendBirdVideoView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSendMessage"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-    <Button
-        android:id="@+id/buttonSendMessage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="GONDER"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextMessage"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutButtons"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonSendMessage"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSendMessage"
-        app:layout_constraintStart_toStartOf="@+id/recyclerViewSession"
-        app:layout_constraintTop_toTopOf="@+id/buttonSendMessage" />
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sendBirdVideoView"
+        app:layout_constraintEnd_toEndOf="@+id/sendBirdVideoView"
+        app:layout_constraintStart_toStartOf="@+id/sendBirdVideoView">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F50057"
+            android:text="END"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

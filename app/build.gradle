@@ -54,4 +54,7 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment:2.3.3"
     implementation "androidx.navigation:navigation-ui:2.3.3"
 
+    implementation 'com.sendbird.sdk:sendbird-calls:1.11.6'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+
 }
